@@ -24,3 +24,4 @@ chromium-latest-linux/
 .vscode/normalize.log
 *.csv
 *.db
+artifacts/logs/normalize.log
