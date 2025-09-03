@@ -1,0 +1,149 @@
+2025-08-28 11:49:10,116 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 11:49:11,620 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:49:16,621 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 11:49:17,462 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:49:22,462 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 11:49:23,292 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:49:23,292 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:53:58,329 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 11:54:01,650 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:54:06,651 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 11:54:09,919 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:54:14,919 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 11:54:18,050 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:54:18,050 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:55:22,832 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 11:55:25,875 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:55:30,876 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 11:55:33,953 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:55:38,953 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 11:55:42,000 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 11:55:42,000 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:00:35,164 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 12:00:38,588 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:00:43,588 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 12:00:46,619 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:00:51,620 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 12:00:54,745 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:00:54,745 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:03:43,209 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 12:03:46,503 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:03:51,504 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 12:03:54,508 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:03:59,508 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 12:04:02,494 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:04:02,495 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:08:13,911 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 12:08:16,903 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:08:21,904 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 12:08:24,785 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:08:29,785 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 12:08:32,679 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:08:32,679 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:10:32,214 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 12:10:35,268 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:10:40,268 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 12:10:43,311 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:10:48,312 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 12:10:51,954 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:10:51,954 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:13:13,797 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-08-28 12:14:55,844 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:15:00,845 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-08-28 12:16:37,582 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:16:42,583 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)
+2025-08-28 12:18:17,194 [ERROR] Step failed (attempt 3): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-08-28 12:18:17,195 [ERROR] Pipeline falhou: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/home/marcio/proj-van/run_pipeline.py", line 104, in main
+    run_pipeline()
+  File "/home/marcio/proj-van/run_pipeline.py", line 45, in run_pipeline
+    run_step(ROOT / "src/normalize/taxonomy_map.py", ["--input", norm_in, "--output", norm_out])
+  File "/home/marcio/proj-van/run_pipeline.py", line 25, in run_step
+    result = subprocess.run(cmd, check=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-09-03 09:13:48,803 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 1)
+2025-09-03 09:15:28,612 [ERROR] Step failed (attempt 1): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-09-03 09:15:33,612 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 2)
+2025-09-03 09:17:19,885 [ERROR] Step failed (attempt 2): Command '['python', '/home/marcio/proj-van/src/normalize/taxonomy_map.py', '--input', '/home/marcio/proj-van/data_raw/3-1-1-service-requests.csv', '--output', '/home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet']' returned non-zero exit status 1.
+2025-09-03 09:17:24,887 [INFO] Running: python /home/marcio/proj-van/src/normalize/taxonomy_map.py --input /home/marcio/proj-van/data_raw/3-1-1-service-requests.csv --output /home/marcio/proj-van/data_processed/normalized/normalized_requests.parquet (Attempt 3)

@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: proj-van-app
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: bash

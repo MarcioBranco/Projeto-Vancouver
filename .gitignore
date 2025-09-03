@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+
+# Data
+*.csv
+*.db
+data_raw/
+artifacts/models/
+artifacts/plots/
+artifacts/pdfs/
+chromedriver/
+chromium-latest-linux/
+
+# OS / Editors
+.DS_Store
+.vscode/normalize.log
+*.csv
+*.db
